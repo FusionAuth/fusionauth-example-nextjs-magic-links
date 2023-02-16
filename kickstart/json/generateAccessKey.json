@@ -1,0 +1,11 @@
+{
+	"method": "POST",
+	"url": "/api/key/generate/#{accessKeyId}",
+	"body": {
+		"key":{
+			"algorithm" : "RS256",
+			"name" : "Access token signing key generated for application #{applicationName}",
+			"length" : 2048
+		}
+	}
+}

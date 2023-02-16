@@ -5,7 +5,7 @@ export default function LoginButton() {
   if (session && session.user) {
     return (
       <>
-        <p>Signed in as {session.user.email}</p> 
+        <p>Signed in as {session.user.email}</p>
         <br />
         <button onClick={() => signOut()}>Sign out</button>
       </>
@@ -15,7 +15,7 @@ export default function LoginButton() {
     <>
       <p>Not signed in</p>
       <br />
-      <button onClick={() => signIn()}>Sign in</button>
+      <button onClick={() => signIn("fusionauth")}>Sign in</button>
     </>
   )
 }

@@ -1,0 +1,28 @@
+{
+  "variables":{
+    "apiKey" : "#{UUID()}",
+    "themeID" : "#{UUID()}",
+    "applicationID" : "404e516b-06b8-49da-9c68-c1cd1928c81d",
+    "clientSecret" : "RBLhJrfRsa0-YxVPrn_aZfzIGccWyncdvHvDNTy-Hrs",
+    "defaultTenantId": "da025934-3ba7-4a13-83f0-aab68c9919b8",
+    "userID" : "#{UUID()}",
+    "accessKeyId" : "#{UUID()}",
+    "idKeyId" : "#{UUID()}",
+    "applicationName" : "NextJS Passwordless Login App",
+    "emailTemplateId" : "1d9e37b5-aa4a-47c2-b560-c914b0f70898"
+  },
+  "apiKeys": [
+    {
+      "key": "#{apiKey}"
+    }
+  ],
+  "requests":[
+    "&{json/generateAccessKey.json}",
+    "&{json/generateIdKey.json}",
+    "&{json/createApplication.json}",
+    "&{json/createUser.json}",
+    "&{json/registerUser.json}",
+    "&{json/createEmailTemplate.json}",
+    "&{json/updateTenant.json}"
+  ]
+}

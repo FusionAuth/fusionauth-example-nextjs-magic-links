@@ -1,0 +1,17 @@
+{
+	"method": "PATCH",
+	"url": "/api/tenant/#{defaultTenantId}",
+	"body": {
+		"tenant":{
+			"issuer": "http://localhost:9011",
+			"emailConfiguration":{
+				"defaultFromEmail": "richard@example.com",
+				"host" : "smtp.sendgrid.net",
+				"port" : 587,
+				"username" : "apikey",
+				"password" : "your-sendgrid-api-key",
+				"passwordlessEmailTemplateId": "#{emailTemplateId}"
+			}
+		}
+	}
+}

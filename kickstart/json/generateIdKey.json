@@ -1,0 +1,11 @@
+{
+	"method": "POST",
+	"url": "/api/key/generate/#{idKeyId}",
+	"body": {
+		"key":{
+			"algorithm" : "RS256",
+			"name" : "Id token signing key generated for application #{applicationName}",
+			"length" : 2048
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+  "method" : "POST",
+  "url" : "/api/application/#{applicationID}",
+  "body" : {
+    "application":{
+      "name" : "#{applicationName}",
+      "registrationConfiguration" : {
+        "enabled" : true,
+        "loginIdType" : "email",
+        "type" : "basic"
+      },
+      "oauthConfiguration" : {
+        "clientSecret": "#{clientSecret}",
+        "authorizedRedirectURLs" : [
+          "http://localhost:3000/api/auth/callback/fusionauth"
+        ],
+        "authorizedOriginURLs": [
+          "http://localhost:3000"
+        ],
+        "logoutURL": "http://localhost:3000/api/auth/logout",
+        "enabledGrants": [
+          "authorization_code",
+          "refresh_token"
+        ],
+        "proofKeyForCodeExchangePolicy" : "Required"
+      },
+      "jwtConfiguration": {
+        "enabled": true,
+        "idTokenKeyId": "#{idKeyId}",
+        "accessTokenKeyId": "#{accessKeyId}"
+      },
+      "passwordlessConfiguration": {
+        "enabled": true
+      }
+    }
+  }
+}

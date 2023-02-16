@@ -35,3 +35,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+/app/node_modules
+/app/.next
+.idea

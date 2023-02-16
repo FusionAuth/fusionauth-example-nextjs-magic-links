@@ -1,0 +1,13 @@
+{
+  "method": "POST",
+  "url": "/api/email/template/#{emailTemplateId}",
+  "body": {
+    "emailTemplate": {
+      "name": "Passwordless Login",
+      "defaultSubject": "Log into FusionAuth",
+      "fromEmail": "richard@example.com",
+      "defaultHtmlTemplate": "@{defaultHtmlTemplate.txt}",
+      "defaultTextTemplate": "@{defaultTextTemplate.txt}"
+    }
+  }
+}
