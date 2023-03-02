@@ -13,8 +13,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation and Running
 
-* `git clone https://github.com/ritza-co/nextjs-fusionauth-passwordless.git`
-* `cd nextjs-fusionauth-passwordless`
+* `git clone https://github.com/FusionAuth/fusionauth-example-nextjs-magic-links.git`
+* `cd fusionauth-example-nextjs-magic-links`
 * replace `your-sendgrid-api-key` in `kickstart/json/updateTenant.json` with your actual SendGrid API key.
 * change `defaultFromEmail` in `kickstart/json/updateTenant.json` to match the Sender Identity you configured in SendGrid.
 * change `fromEmail` in `kickstart/json/createEmailTemplate.json` to match the Sender Identity you configured in SendGrid.
