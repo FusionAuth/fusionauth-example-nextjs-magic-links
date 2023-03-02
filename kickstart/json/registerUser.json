@@ -2,7 +2,7 @@
   "url": "/api/user/registration/#{userID}",
   "body": {
     "registration": {
-      "applicationId": "#{applicationID}"
+      "applicationId": "#{applicationId}"
     }
   }
 }

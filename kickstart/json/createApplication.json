@@ -1,6 +1,6 @@
 {
   "method" : "POST",
-  "url" : "/api/application/#{applicationID}",
+  "url" : "/api/application/#{applicationId}",
   "body" : {
     "application":{
       "name" : "#{applicationName}",
